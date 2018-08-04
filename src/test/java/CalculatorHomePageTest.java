@@ -25,6 +25,7 @@ public class CalculatorHomePageTest extends BaseAndroidTest {
     @Description("Test_02 : To Verify User Able To Calculate Two Number With Substract Formula")
     @Test()
     public void Test_02(){
+        calculatorHomePage = new CalculatorHomePage(getAppiumDriver());
         calculatorHomePage.checkCalculatorHomePageIsDisplayed();
         calculatorHomePage.clickButtonFive();
         calculatorHomePage.clickButtonSubstract();
@@ -37,6 +38,7 @@ public class CalculatorHomePageTest extends BaseAndroidTest {
     @Description("Test_03 : To Verify User Able To Calculate Two Number With Multiply Formula")
     @Test()
     public void Test_03(){
+        calculatorHomePage = new CalculatorHomePage(getAppiumDriver());
         calculatorHomePage.checkCalculatorHomePageIsDisplayed();
         calculatorHomePage.clickButtonFive();
         calculatorHomePage.clickButtonSubstract();
