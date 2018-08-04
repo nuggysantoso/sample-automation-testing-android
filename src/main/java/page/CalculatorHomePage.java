@@ -132,7 +132,7 @@ public class CalculatorHomePage extends AbstractPage {
         assertTextElementIsEquals(getElementById(textViewResult), getResult());
     }
 
-    public void checkFormulaIsCorrectAfterPressEquals(){
-        assertTextElementIsEquals(getElementById(textViewFormula), getResult());
+    public void checkResultStillCorrectAfterPressEquals(){
+        assertTextElementIsEquals(getElementById(textViewResult), getResult());
     }
 }

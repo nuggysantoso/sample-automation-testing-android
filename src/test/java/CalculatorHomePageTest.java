@@ -12,13 +12,14 @@ public class CalculatorHomePageTest extends BaseAndroidTest {
     @Description("Test_01 : To Verify User Able To Calculate Two Number With Add Formula")
     @Test()
     public void Test_01(){
+        calculatorHomePage = new CalculatorHomePage(getAppiumDriver());
         calculatorHomePage.checkCalculatorHomePageIsDisplayed();
         calculatorHomePage.clickButtonFive();
         calculatorHomePage.clickButtonAdd();
         calculatorHomePage.clickButtonFour();
         calculatorHomePage.checkResultIsCorrect();
         calculatorHomePage.clickButtonEquals();
-        calculatorHomePage.checkFormulaIsCorrectAfterPressEquals();
+        calculatorHomePage.checkResultStillCorrectAfterPressEquals();
     }
 
     @Description("Test_02 : To Verify User Able To Calculate Two Number With Substract Formula")
@@ -30,7 +31,7 @@ public class CalculatorHomePageTest extends BaseAndroidTest {
         calculatorHomePage.clickButtonFour();
         calculatorHomePage.checkResultIsCorrect();
         calculatorHomePage.clickButtonEquals();
-        calculatorHomePage.checkFormulaIsCorrectAfterPressEquals();
+        calculatorHomePage.checkResultStillCorrectAfterPressEquals();
     }
 
     @Description("Test_03 : To Verify User Able To Calculate Two Number With Multiply Formula")
@@ -42,6 +43,6 @@ public class CalculatorHomePageTest extends BaseAndroidTest {
         calculatorHomePage.clickButtonFour();
         calculatorHomePage.checkResultIsCorrect();
         calculatorHomePage.clickButtonEquals();
-        calculatorHomePage.checkFormulaIsCorrectAfterPressEquals();
+        calculatorHomePage.checkResultStillCorrectAfterPressEquals();
     }
 }
