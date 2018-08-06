@@ -41,7 +41,7 @@ public class CalculatorHomePageTest extends BaseAndroidTest {
         calculatorHomePage = new CalculatorHomePage(getAppiumDriver());
         calculatorHomePage.checkCalculatorHomePageIsDisplayed();
         calculatorHomePage.clickButtonFive();
-        calculatorHomePage.clickButtonSubstract();
+        calculatorHomePage.clickButtonMultiply();
         calculatorHomePage.clickButtonFour();
         calculatorHomePage.checkResultIsCorrect();
         calculatorHomePage.clickButtonEquals();
